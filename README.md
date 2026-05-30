@@ -50,7 +50,7 @@ The touch controller has its own separate pin header on the board. Even though T
 | MOSI / T_DIN | 19 | GPIO 10 | shared |
 | SCK / T_CLK | 23 | GPIO 11 | shared |
 | MISO / T_DO | 21 | GPIO 9 | shared |
-| T_CS | **GND** | GND | see note below |
+| T_CS | **26** | GPIO 7 | see note below |
 | T_IRQ | 7 | GPIO 4 | |
 
 > **T_CS Note:** Connecting T_CS to GPIO 7 (CE1) caused SPI conflicts. Grounding T_CS permanently is the reliable solution for this display. This works because the display and touch controller are on separate SPI chip selects at the kernel level (spi0.0 and spi0.1).
