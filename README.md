@@ -270,7 +270,7 @@ The touch header pins are separate from the display header even though some sign
 | T_CLK | 23 | GPIO 11 | same pin as display SCK |
 | T_DIN | 19 | GPIO 10 | same pin as display MOSI |
 | T_DO | 21 | GPIO 9 | same pin as display MISO |
-| T_CS | GND | GND | ground permanently |
+| T_CS | **26** | GPIO 7 | see note below |
 | T_IRQ | 7 | GPIO 4 | |
 
 For pins 23, 19, and 21 you need two wires going into the same Pi pin. Use a breadboard or twist the wires together.
